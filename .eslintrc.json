@@ -13,7 +13,7 @@
       "no-extra-parens": "warn",
       "curly": "error",
       "eqeqeq": "error",
-      "complexity": ["warn", 10],
+      "complexity": ["warn", 6],
       "dot-notation": "error",
       "no-alert": "error",
       "no-else-return": "error",
@@ -64,7 +64,6 @@
       "no-unused-vars": "warn",
       "no-mixed-spaces-and-tabs": "warn",
       "no-extra-semi": "warn",
-      "no-prototype-builtins": "warn",
       "no-unreachable": "warn"
     }
 }

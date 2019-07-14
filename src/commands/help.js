@@ -67,7 +67,7 @@ const helpMessage = function(config, botname, param)
    // ------------------------------
    // Support & Donations
    // ------------------------------
-
+ 
    var donation = "";
    if (auth.donation && auth.donation.length > 5)
    {
@@ -83,7 +83,7 @@ const helpMessage = function(config, botname, param)
    helpSection({
       config: config,
       title: "Translate by Reacting",
-      link: "https://github.com/ZyC0R3/Rita/wiki/Translate-by-Reacting",
+      link: "https://github.com/ZyC0R3/Rita/Translate-with-Emoji-Reaction",
       icon: ":flag_white:",
       cmd: null,
       help: "react",
@@ -93,7 +93,7 @@ const helpMessage = function(config, botname, param)
    helpSection({
       config: config,
       title: "Translate Custom Text",
-      link: "https://github.com/ZyC0R3/Rita/wiki/Translate-Custom-Message",
+      link: "https://github.com/ZyC0R3/Rita/Translate-Custom-Text",
       icon: ":abc:",
       cmd: "this",
       help: "custom",
@@ -103,7 +103,7 @@ const helpMessage = function(config, botname, param)
    helpSection({
       config: config,
       title: "Translate Last Message",
-      link: "https://github.com/ZyC0R3/Rita/wiki/Translate-Last-Message",
+      link: "https://github.com/ZyC0R3/Rita/Translate-Last-Message",
       icon: ":arrow_double_up:",
       cmd: "last",
       help: "last",
@@ -113,7 +113,7 @@ const helpMessage = function(config, botname, param)
    helpSection({
       config: config,
       title: "Translate Channel (Automatic)",
-      link: "https://github.com/ZyC0R3/Rita/wiki/Translate-Channel-Automatic",
+      link: "https://github.com/ZyC0R3/Rita/Translate-Channel-Automatic",
       icon: ":hash:",
       cmd: "channel",
       help: "auto",
@@ -142,39 +142,11 @@ const helpMessage = function(config, botname, param)
    }) +
    helpSection({
       config: config,
-      title: "Misc. Settings",
-      link: "https://github.com/ZyC0R3/Rita/wiki/Misc.-Commands",
-      icon: ":robot:",
-      cmd: "misc",
-      help: "misc",
-      args: "",
-      example: ""
-   }) +
-   helpSection({
-      config: config,
-      title: "ReadMe",
-      link: "https://github.com/ZyC0R3/Rita/blob/master/README.md",
-      icon: ":bookmark_tabs:",
-      cmd: "readme",
-      help: "readme",
-      args: "",
-      example: ""
-   }) +
-   helpSection({
-      config: config,
       title: "Report Bugs / Request Features",
       link: "https://github.com/ZyC0R3/Rita/issues",
       icon: ":raising_hand::skin-tone-3:"
    }) +
    donation;
-
-   // ------------------------------
-   // ReadMe location
-   // ------------------------------
-
-   const readme =
-   `__**The ReadMe File can be located below**__\n\n` +
-   `https://github.com/ZyC0R3/Rita/blob/master/README.md`;
 
    // ------------------------------
    // Last Message (last)
@@ -348,8 +320,7 @@ const helpMessage = function(config, botname, param)
       "auto": auto,
       "stop": stop,
       "misc": misc,
-      "settings": settings,
-      "readme": readme
+      "settings": settings
    };
 
    if (paramMap.hasOwnProperty(param))
